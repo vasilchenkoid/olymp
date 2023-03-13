@@ -1,0 +1,95 @@
+@forward '../base/hero';
+
+.so-page_olymp .so-hero__image_1 {
+	top: -60px;
+	left: 10px;
+	width: 72px;
+	height: 72px;
+
+	@media (min-width: 600px) {
+		top: -50px;
+		left: 40px;
+		width: 72px;
+		height: 72px;
+	}
+
+	@media (min-width: 800px) {
+		top: 0;
+		left: 0;
+		width: 96px;
+		height: 96px;
+	}
+}
+
+.so-page_olymp .so-hero__image_2 {
+	top: -40px;
+	right: 50px;
+	width: auto;
+	height: 50px;
+
+	@media (min-width: 600px) {
+		top: -40px;
+		right: 50px;
+		width: auto;
+		height: 50px;
+	}
+
+	@media (min-width: 800px) {
+		top: -60px;
+		right: 150px;
+		width: 89px;
+		height: 74px;
+	}
+}
+
+.so-page_olymp .so-hero__image_3 {
+	display: none;
+
+	@media (min-width: 800px) {
+		display: block;
+		top: 0;
+		right: 0;
+		width: 38px;
+		height: 33px;
+	}
+}
+
+.so-page_olymp .so-hero__image_4 {
+	bottom: 40px;
+	right: -20px;
+	width: auto;
+	height: 40px;
+
+	@media (min-width: 600px) {
+		bottom: 40px;
+		right: -10px;
+		width: auto;
+		height: 40px;
+	}
+
+	@media (min-width: 800px) {
+		bottom: 56px;
+		right: -10px;
+		width: auto;
+		height: 56px;
+	}
+
+	@media (min-width: 1000px) {
+		bottom: 64px;
+		right: 0;
+		width: auto;
+		height: 64px;
+	}
+}
+
+.so-page_olymp .so-hero__image_5 {
+	display: none;
+
+	@media (min-width: 800px) {
+		display: block;
+		bottom: 50px;
+		left: 0;
+		width: 42px;
+		height: 36px;
+	}
+}

@@ -1,0 +1,125 @@
+:root {
+	$so-font-weight-medium: 500;
+	$so-font-weight-semibold: 600;
+	--so-font-weight-medium: #{$so-font-weight-medium};
+	--so-font-weight-semibold: #{$so-font-weight-semibold};
+
+	$so-font-size-caption: 12px;
+	$so-line-height-caption: 16px;
+	--so-font-size-caption: #{$so-font-size-caption};
+	--so-line-height-caption: #{$so-line-height-caption};
+
+	$so-font-size-body: 14px;
+	$so-line-height-body: 20px;
+	--so-font-size-body: #{$so-font-size-body};
+	--so-line-height-body: #{$so-line-height-body};
+
+	$so-font-size-subtitle: 16px;
+	$so-line-height-subtitle: 24px;
+	--so-font-size-subtitle: #{$so-font-size-subtitle};
+	--so-line-height-subtitle: #{$so-line-height-subtitle};
+
+	$so-font-size-card-title: 20px;
+	$so-line-height-card-title: 28px;
+	--so-font-size-card-title: #{$so-font-size-card-title};
+	--so-line-height-card-title: #{$so-line-height-card-title};
+
+	$so-font-size-section-title: 32px;
+	$so-line-height-section-title: 40px;
+	--so-font-size-section-title: #{$so-font-size-section-title};
+	--so-line-height-section-title: #{$so-line-height-section-title};
+
+	$so-font-size-hero: 32px;
+	$so-line-height-hero: 40px;
+	--so-font-size-hero: #{$so-font-size-hero};
+	--so-line-height-hero: #{$so-line-height-hero};
+
+	$so-grid-gap: 12px;
+	--so-grid-gap: #{$so-grid-gap};
+
+	$so-border-radius-xs: 4px;
+	$so-border-radius-sm: 8px;
+	$so-border-radius-md: 12px;
+	$so-border-radius-lg: 16px;
+	$so-border-radius-xl: 20px;
+	$so-border-radius-xxl: 24px;
+	$so-border-radius-round: 9999px;
+	--so-border-radius-xs: #{$so-border-radius-xs};
+	--so-border-radius-sm: #{$so-border-radius-sm};
+	--so-border-radius-md: #{$so-border-radius-md};
+	--so-border-radius-lg: #{$so-border-radius-lg};
+	--so-border-radius-xl: #{$so-border-radius-xl};
+	--so-border-radius-xxl: #{$so-border-radius-xxl};
+	--so-border-radius-round: #{$so-border-radius-round};
+
+	$so-transform-scale-up: 1.01;
+	$so-transform-scale-down: 0.99;
+	--so-transform-scale-up: #{$so-transform-scale-up};
+	--so-transform-scale-down: #{$so-transform-scale-down};
+
+	$so-section-space-sm: 32px;
+	$so-section-space-md: 48px;
+	$so-section-space-lg: 64px;
+	--so-section-space-sm: #{$so-section-space-sm};
+	--so-section-space-md: #{$so-section-space-md};
+	--so-section-space-lg: #{$so-section-space-lg};
+
+	@media (min-width: 800px) {
+		$so-font-size-body: 16px;
+		$so-line-height-body: 24px;
+		--so-font-size-body: #{$so-font-size-body};
+		--so-line-height-body: #{$so-line-height-body};
+
+		$so-font-size-subtitle: 20px;
+		$so-line-height-subtitle: 28px;
+		--so-font-size-subtitle: #{$so-font-size-subtitle};
+		--so-line-height-subtitle: #{$so-line-height-subtitle};
+
+		$so-font-size-card-title: 24px;
+		$so-line-height-card-title: 32px;
+		--so-font-size-card-title: #{$so-font-size-card-title};
+		--so-line-height-card-title: #{$so-line-height-card-title};
+
+		$so-font-size-section-title: 32px;
+		$so-line-height-section-title: 40px;
+		--so-font-size-section-title: #{$so-font-size-section-title};
+		--so-line-height-section-title: #{$so-line-height-section-title};
+
+		$so-font-size-hero: 48px;
+		$so-line-height-hero: 56px;
+		--so-font-size-hero: #{$so-font-size-hero};
+		--so-line-height-hero: #{$so-line-height-hero};
+
+		$so-grid-gap: 16px;
+		--so-grid-gap: #{$so-grid-gap};
+
+		$so-section-space-sm: 48px;
+		$so-section-space-md: 64px;
+		$so-section-space-lg: 96px;
+		--so-section-space-sm: #{$so-section-space-sm};
+		--so-section-space-md: #{$so-section-space-md};
+		--so-section-space-lg: #{$so-section-space-lg};
+	}
+
+	@media (min-width: 1000px) {
+		$so-font-size-section-title: 48px;
+		$so-line-height-section-title: 56px;
+		--so-font-size-section-title: #{$so-font-size-section-title};
+		--so-line-height-section-title: #{$so-line-height-section-title};
+	
+		$so-font-size-hero: 64px;
+		$so-line-height-hero: 64px;
+		--so-font-size-hero: #{$so-font-size-hero};
+		--so-line-height-hero: #{$so-line-height-hero};
+
+		$so-grid-gap: 24px;
+		--so-grid-gap: #{$so-grid-gap};
+
+		$so-section-space-sm: 64px;
+		$so-section-space-md: 96px;
+		$so-section-space-lg: 128px;
+		--so-section-space-sm: #{$so-section-space-sm};
+		--so-section-space-md: #{$so-section-space-md};
+		--so-section-space-lg: #{$so-section-space-lg};
+	}
+}

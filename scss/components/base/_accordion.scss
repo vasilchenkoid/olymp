@@ -1,0 +1,64 @@
+// base
+
+.so-accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.so-accordion__item {
+	border-radius: var(--so-border-radius-md);
+	background-color: var(--so-color-bg-secondary);
+}
+
+.so-accordion__item:hover {
+	background-color: var(--so-color-bg-tertiary);
+	transform: scale(var(--so-transform-scale-down));
+}
+
+.so-accordion__item-radio {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.so-accordion__item-header {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	cursor: pointer;
+}
+
+.so-accordion__item-radio:checked ~ .so-accordion__item-header {
+	cursor: default;
+}
+
+.so-accordion__item-title {
+	flex: 1;
+	font-weight: var(--so-font-weight-semibold);
+	font-size: var(--so-font-size-card-title);
+	line-height: var(--so-line-height-card-title);
+}
+
+.so-accordion__item-toggle {
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	font-size: 24px;
+}
+
+.so-accordion__item-radio:checked ~ .so-accordion__item-header .so-accordion__item-toggle {
+	transform: scale(0);
+}
+
+.so-accordion__item-body {
+	height: 0;
+	opacity: 0;
+}
+
+.so-accordion__item-radio:checked ~ .so-accordion__item-body {
+	height: auto;
+	padding: 0 16px 16px;
+	opacity: 1;
+}

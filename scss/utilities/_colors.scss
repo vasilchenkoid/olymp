@@ -1,0 +1,37 @@
+$colors: (
+	( 'name': 'red', 'bg-light': #FFE5E5, 'highlight': #F2DADA, 'border': #FF8080, 'disabled': #FF8080, 'default': #FF3333, 'hover': #E51717, 'active': #CC0000),
+	( 'name': 'orange', 'bg-light': #FFF2E5, 'highlight': #F2E6DA, 'border': #FFBF80, 'disabled': #FFBF80, 'default': #FF9933, 'hover': #E57E17, 'active': #CC6600),
+	( 'name': 'yellow', 'bg-light': #FFFFE5, 'highlight': #F2EEDA, 'border': #FFEA80, 'disabled': #FFEA80, 'default': #FFDD33, 'hover': #E5C317, 'active': #CCAA00),
+	( 'name': 'lime', 'bg-light': #F2FFE5, 'highlight': #E6F2DA, 'border': #ACE573, 'disabled': #ACE573, 'default': #66CC00, 'hover': #59B200, 'active': #4D9900),
+	( 'name': 'green', 'bg-light': #E5FFE5, 'highlight': #DAF2DA, 'border': #73E573, 'disabled': #73E573, 'default': #00CC00, 'hover': #00B200, 'active': #009900),
+	( 'name': 'teal', 'bg-light': #E5FFF2, 'highlight': #DAF2EA, 'border': #66CCAA, 'disabled': #66CCAA, 'default': #009966, 'hover': #008055, 'active': #006644),
+	( 'name': 'cian', 'bg-light': #E5FFFF, 'highlight': #DAF2F2, 'border': #73E5E5, 'disabled': #73E5E5, 'default': #00CCCC, 'hover': #00B2B2, 'active': #009999),
+	( 'name': 'blue', 'bg-light': #E5F2FF, 'highlight': #DAE6F2, 'border': #80BFFF, 'disabled': #80BFFF, 'default': #3399FF, 'hover': #177EE5, 'active': #0066CC),
+	( 'name': 'indigo', 'bg-light': #E5E5FF, 'highlight': #DADAF2, 'border': #8080FF, 'disabled': #8080FF, 'default': #3333FF, 'hover': #1717E5, 'active': #0000CC),
+	( 'name': 'purple', 'bg-light': #F2E5FF, 'highlight': #E6DAF2, 'border': #BF80FF, 'disabled': #BF80FF, 'default': #9933FF, 'hover': #7E17E5, 'active': #6600CC),
+	( 'name': 'magenta', 'bg-light': #FFE5FF, 'highlight': #F2DAF2, 'border': #FF80FF, 'disabled': #FF80FF, 'default': #FF33FF, 'hover': #E517E5, 'active': #CC00CC),
+	( 'name': 'rose', 'bg-light': #FFE5F2, 'highlight': #F2DAE6, 'border': #FF80BF, 'disabled': #FF80BF, 'default': #FF3399, 'hover': #E5177E, 'active': #CC0066)
+);
+
+:root {
+	--so-color-bg-primary: #FFFFFF;
+	--so-color-bg-secondary: #F5F7FA;
+	--so-color-bg-tertiary: #EBF0F5;
+	--so-color-bg-inverse: #112233;
+
+	--so-color-text-body: #112233;
+	--so-color-text-title: #445566;
+	--so-color-text-subtitle: #778899;
+	--so-color-text-placeholder: #AABBCC;
+	--so-color-text-button: #FFFFFF;
+
+	@each $clr in $colors {
+		--so-color-bg-light-#{map-get($clr, 'name')}: #{map-get($clr, 'bg-light')};
+		--so-color-accent-#{map-get($clr, 'name')}-highlight: #{map-get($clr, 'highlight')};
+		--so-color-accent-#{map-get($clr, 'name')}-border: #{map-get($clr, 'border')};
+		--so-color-accent-#{map-get($clr, 'name')}-disabled: #{map-get($clr, 'disabled')};
+		--so-color-accent-#{map-get($clr, 'name')}-default: #{map-get($clr, 'default')};
+		--so-color-accent-#{map-get($clr, 'name')}-hover: #{map-get($clr, 'hover')};
+		--so-color-accent-#{map-get($clr, 'name')}-active: #{map-get($clr, 'active')};
+	}
+}

@@ -1,0 +1,66 @@
+// base
+
+.so-hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.so-hero__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.so-hero__title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: var(--so-font-weight-semibold);
+	font-size: var(--so-font-size-hero);
+	line-height: var(--so-line-height-hero);
+}
+
+.so-hero__title-block {
+	display: flex;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.so-hero__title-block_filled {
+	padding: 10px 20px 16px 20px;
+	border-radius: var(--so-border-radius-xxl);
+	background-color: var(--so-color-bg-inverse);
+	color: var(--so-color-text-button);
+	rotate: -2deg;
+}
+
+.so-hero__subtitle {
+	margin-top: 24px;
+	color: var(--so-color-text-subtitle);
+	font-size: var(--so-font-size-subtitle);
+	line-height: var(--so-line-height-subtitle);
+}
+
+.so-hero__actions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 48px;
+
+	@media (min-width: 600px) {
+		flex-direction: row;
+	}
+}
+
+.so-hero__image {
+	position: absolute;
+	object-fit: contain;
+}

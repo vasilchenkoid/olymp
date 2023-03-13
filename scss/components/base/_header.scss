@@ -1,0 +1,122 @@
+// base
+
+.so-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	height: 60px;
+	z-index: 1010;
+}
+
+.so-header__main {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	@media (min-width: 600px) {
+		gap: 24px;
+	}
+}
+
+.so-header__logo,
+.so-header__logo-image {
+	display: block;
+	width: 120px;
+	height: 40px;
+	background-size: contain;
+	object-fit: contain;
+}
+
+.so-header__nav {
+	@media (min-width: 1000px) {
+		order: 2;
+	}
+}
+
+.so-header__nav-checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.so-header__nav-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border-radius: var(--so-border-radius-md);
+	font-size: 32px;
+	cursor: pointer;
+
+	@media (min-width: 1000px) {
+		display: none;
+	}
+}
+
+.so-header__nav-toggle:hover { background-color: var(--so-color-bg-secondary); }
+.so-header__nav-toggle:active { background-color: var(--so-color-bg-tertiary); }
+.so-header__nav-toggle:focus { outline: 4px solid var(--so-color-bg-secondary); }
+
+.so-header__nav-list {
+	position: absolute;
+	top: 44px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: max-content;
+	height: 0;
+	border-radius: var(--so-border-radius-md);
+	background-color: var(--so-color-bg-primary);
+	box-shadow: 0 16px 64px 0 rgba(0, 51, 102, 0.08);
+	overflow: hidden;
+	opacity: 0;
+
+	@media (min-width: 1000px) {
+		position: relative;
+		top: 0;
+		flex-direction: row;
+		gap: 0;
+		width: auto;
+		height: auto;
+		border-radius: none;
+		background: none;
+		box-shadow: none;
+		overflow: visible;
+		opacity: 1;
+	}
+}
+
+.so-header__nav:hover .so-header__nav-list {
+	height: auto;
+	padding: 4px;
+	opacity: 1;
+
+	@media (min-width: 1000px) {
+		padding: 0;
+	}
+}
+
+.so-header__nav-item {
+	display: block;
+	padding: 8px 24px;
+	border-radius: var(--so-border-radius-round);
+	font-weight: var(--so-font-weight-semibold);
+}
+
+.so-header__nav-item:hover { background-color: var(--so-color-bg-secondary); }
+.so-header__nav-item:active { background-color: var(--so-color-bg-tertiary); }
+.so-header__nav-item:focus { outline: 4px solid var(--so-color-bg-secondary); }
+
+.so-header__actions {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.so-header__phone { font-weight: var(--so-font-weight-semibold); }

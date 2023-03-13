@@ -1,0 +1,81 @@
+// base
+
+@use '../../utilities/colors';
+
+.so-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	height: 40px;
+	padding-left: 24px;
+	padding-right: 24px;
+	font-weight: var(--so-font-weight-semibold);
+	border-radius: var(--so-border-radius-round);
+	cursor: pointer;
+}
+
+.so-btn:hover { transform: scale(var(--so-transform-scale-down)); }
+.so-btn:disabled { cursor: default; }
+
+.so-btn_size_sm {
+	gap: 4px;
+	height: 32px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.so-btn_size_md {
+	gap: 8px;
+	height: 40px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.so-btn_size_lg {
+	gap: 16px;
+	height: 56px;
+	padding-left: 48px;
+	padding-right: 48px;
+}
+
+@each $clr in colors.$colors {
+	.so-btn_type_filled.so-btn_color_#{map-get($clr, 'name')} {
+		background-color: var(--so-color-accent-#{map-get($clr, 'name')}-default);
+		color: var(--so-color-text-button);
+	}
+
+	.so-btn_type_filled.so-btn_color_#{map-get($clr, 'name')}:hover { background-color: var(--so-color-accent-#{map-get($clr, 'name')}-hover); }
+	.so-btn_type_filled.so-btn_color_#{map-get($clr, 'name')}:active { background-color: var(--so-color-accent-#{map-get($clr, 'name')}-active); }
+	.so-btn_type_filled.so-btn_color_#{map-get($clr, 'name')}:focus { outline: 4px solid var(--so-color-accent-#{map-get($clr, 'name')}-highlight); }
+	.so-btn_type_filled.so-btn_color_#{map-get($clr, 'name')}:disabled { background-color: var(--so-color-accent-#{map-get($clr, 'name')}-disabled); }
+	.so-btn_type_filled.so-btn_color_#{map-get($clr, 'name')} * { color: inherit;}
+
+	.so-btn_type_outline.so-btn_color_#{map-get($clr, 'name')} {
+		border: 1px solid var(--so-color-accent-#{map-get($clr, 'name')}-border);
+		color: var(--so-color-accent-#{map-get($clr, 'name')}-default);
+	}
+
+	.so-btn_type_outline.so-btn_color_#{map-get($clr, 'name')}:hover { color: var(--so-color-accent-#{map-get($clr, 'name')}-hover); }
+	.so-btn_type_outline.so-btn_color_#{map-get($clr, 'name')}:active { color: var(--so-color-accent-#{map-get($clr, 'name')}-active); }
+	.so-btn_type_outline.so-btn_color_#{map-get($clr, 'name')}:focus { outline: 4px solid var(--so-color-accent-#{map-get($clr, 'name')}-highlight); }
+	.so-btn_type_outline.so-btn_color_#{map-get($clr, 'name')}:disabled { color: var(--so-color-accent-#{map-get($clr, 'name')}-disabled); }
+	.so-btn_type_outline.so-btn_color_#{map-get($clr, 'name')} * { color: inherit;}
+
+	.so-btn_type_tonal.so-btn_color_#{map-get($clr, 'name')} {
+		background-color: var(--so-color-accent-#{map-get($clr, 'name')}-highlight);
+		color: var(--so-color-accent-#{map-get($clr, 'name')}-default);
+	}
+
+	.so-btn_type_tonal.so-btn_color_#{map-get($clr, 'name')}:hover { color: var(--so-color-accent-#{map-get($clr, 'name')}-hover); }
+	.so-btn_type_tonal.so-btn_color_#{map-get($clr, 'name')}:active { color: var(--so-color-accent-#{map-get($clr, 'name')}-active); }
+	.so-btn_type_tonal.so-btn_color_#{map-get($clr, 'name')}:focus { outline: 4px solid var(--so-color-accent-#{map-get($clr, 'name')}-highlight); }
+	.so-btn_type_tonal.so-btn_color_#{map-get($clr, 'name')}:disabled { color: var(--so-color-accent-#{map-get($clr, 'name')}-disabled); }
+	.so-btn_type_tonal.so-btn_color_#{map-get($clr, 'name')} * { color: inherit;}
+}
+
+.so-btn__icon {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}

@@ -1,0 +1,17 @@
+@forward '../base/block-description';
+
+.so-page_olymp .so-section_question .so-block-description__subtitle {
+	margin-top: 16px;
+
+	@media (min-width: 1000px) {
+		margin-top: 24px;
+	}
+}
+
+.so-page_olymp .so-section_question .so-block-description__body {
+	margin-top: 32px;
+
+	@media (min-width: 1000px) {
+		margin-top: 48px;
+	}
+}

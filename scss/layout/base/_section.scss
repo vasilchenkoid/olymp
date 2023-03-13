@@ -1,0 +1,52 @@
+// base
+
+@use '../../utilities/colors';
+
+* {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	font-family: 'Manrope', sans-serif;
+	font-weight: var(--so-font-weight-medium);
+	font-size: var(--so-font-size-body);
+	line-height: var(--so-line-height-body);
+	color: var(--so-color-text-body);
+	text-decoration: none;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .25s;
+}
+
+.so-section {
+}
+
+@each $clr in colors.$colors {
+	.so-section_color_#{map-get($clr, 'name')} {
+		background-color: var(--so-color-bg-light-#{map-get($clr, 'name')});
+	}
+}
+
+.so-section__title {
+	font-weight: var(--so-font-weight-semibold);
+	font-size: var(--so-font-size-section-title);
+	line-height: var(--so-line-height-section-title);
+	margin-bottom: 48px;
+}
+
+.so-section__title_centered { text-align: center; }
+
+@each $clr in colors.$colors {
+	.so-section__title_accent_#{map-get($clr, 'name')} {
+		font-weight: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		color: var(--so-color-accent-#{map-get($clr, 'name')}-default);
+	}
+}
+
+.so-section__image {
+	position: absolute;
+	object-fit: contain;
+}

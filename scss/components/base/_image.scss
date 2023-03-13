@@ -1,0 +1,16 @@
+// base
+
+.so-image {
+	display: block;
+	width: 100%;
+	aspect-ratio: 2/1;
+	margin-top: 20px;
+	border-radius: var(--so-border-radius-md);
+	background-color: var(--so-color-bg-secondary);
+	object-fit: cover;
+}
+
+.so-image:hover {
+	background-color: var(--so-color-bg-tertiary);
+	transform: scale(var(--so-transform-scale-down));
+}

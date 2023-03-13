@@ -1,0 +1,29 @@
+@forward '../base/cta';
+
+.so-page_olymp .so-cta_1 {
+	flex-direction: column-reverse;
+
+	@media (min-width: 800px) {
+		flex-direction: row;
+	}
+}
+
+.so-page_olymp .so-cta_2 {
+	flex-direction: column;
+	padding: 24px;
+	margin-left: -16px;
+	margin-right: -16px;
+	background-color: var(--so-color-bg-light-blue);
+
+	@media (min-width: 800px) {
+		flex-direction: row;
+		padding: 32px;
+	}
+
+	@media (min-width: 1000px) {
+		padding: 48px;
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: var(--so-border-radius-md);
+	}
+}

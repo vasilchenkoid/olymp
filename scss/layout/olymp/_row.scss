@@ -1,0 +1,29 @@
+@forward '../base/row';
+
+.so-page_olymp .so-section_about .so-row,
+.so-page_olymp .so-section_how .so-row,
+.so-page_olymp .so-section_why .so-row,
+.so-page_olymp .so-section_question .so-row {
+	flex-direction: column;
+}
+
+.so-page_olymp .so-section_question .so-row {
+	gap: 32px;
+}
+
+@media (min-width: 600px) {
+	.so-page_olymp .so-section_how .so-row { flex-direction: row; }
+}
+
+@media (min-width: 800px) {
+	.so-page_olymp .so-section_about .so-row { flex-direction: row; }
+	.so-page_olymp .so-section_question .so-row {
+		flex-direction: row;
+		gap: 64px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.so-page_olymp .so-section_why .so-row { flex-direction: row; }
+	.so-page_olymp .so-section_question .so-row { gap: 96px; }
+}

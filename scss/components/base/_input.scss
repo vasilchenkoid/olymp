@@ -1,0 +1,35 @@
+// base
+
+.so-input {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	height: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: var(--so-border-radius-round);
+	background-color: var(--so-color-bg-secondary);
+}
+
+.so-input:focus { outline: 1px solid var(--so-color-accent-teal-border); }
+
+.so-input_size_sm {
+	gap: 4px;
+	height: 32px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.so-input_size_md {
+	gap: 8px;
+	height: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.so-input_size_lg {
+	gap: 16px;
+	height: 56px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
